@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+div,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+main,
+header {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f1f7;
+  font-family: "Dosis", sans-serif;
+}
+button {
+  font-family: "Dosis", sans-serif;
+}

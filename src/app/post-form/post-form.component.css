@@ -1,0 +1,29 @@
+.form-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #b1ddea;
+  border-radius: 10px;
+}
+.title {
+  padding: 10px;
+}
+.thought {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+}

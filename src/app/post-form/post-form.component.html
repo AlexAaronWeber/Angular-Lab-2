@@ -1,0 +1,25 @@
+<div class="form-container">
+  <form
+    #addForm="ngForm"
+    (submit)="addPost(addForm); addForm.reset()"
+    class="form"
+  >
+    <label for="title">Title:</label>
+    <input
+      class="title"
+      type="text"
+      name="title"
+      placeholder="叫什么？"
+      ngModel
+    />
+    <label for="thought">Thought:</label>
+    <input
+      class="thought"
+      type="text"
+      name="thought"
+      placeholder="你在想什么东西？"
+      ngModel
+    />
+    <button>Post</button>
+  </form>
+</div>

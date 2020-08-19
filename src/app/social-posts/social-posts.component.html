@@ -1,0 +1,19 @@
+<header class="header">My Thoughts</header>
+<main class="main">
+  <button class="new-thought" *ngIf="showForm === false" (click)="toggleForm()">
+    New Thought
+  </button>
+  <app-post-form
+    (posted)="onAdd($event)"
+    *ngIf="showForm === true"
+  ></app-post-form>
+  <div class="post-container">
+    <ol>
+      <app-posts
+        *ngFor="let post of posts; index as i"
+        [postRef]="post"
+        (deleted)="onDelete(i)"
+      ></app-posts>
+    </ol>
+  </div>
+</main>
